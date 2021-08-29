@@ -2967,9 +2967,11 @@ class PlayState extends MusicBeatState
 					persistentDraw = false;
 					paused = true;
 	
-					if (!grabbed)
+					if (FlxG.sound.music.playing)
 					{
-						vocals.stop();
+						if (vocals != null)
+							if (vocals.playing)
+								vocals.stop();
 						FlxG.sound.music.stop();
 					}
 	
