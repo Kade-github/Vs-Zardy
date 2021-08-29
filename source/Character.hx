@@ -98,7 +98,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singRIGHTmiss', 'BF NOTE RIGHT MISS instance', 24, false);
 				animation.addByPrefix('singDOWNmiss', 'BF NOTE DOWN MISS instance', 24, false);
 				animation.addByPrefix('fall', 'bf pre attack instance', 24, false);
-				animation.addByPrefix('axe', 'Holding Axe instance', 24, false);
+				animation.addByPrefix('axe', 'Holding Axe instance', Math.floor(24 * PlayState.songMultiplier), false);
 				animation.addByIndices('dead', 'BF hit instance 1',[19,20,21,22,23,24],"", 24, false);
 				animation.addByIndices('heldByVine', 'BF hit instance 1',[4,5,6,7,8,9,10,12,13,14,15,16,17,18],"", 24, true);
 				animation.addByIndices('deadInVine', 'BF hit instance 1',[18,19,20,21,22,23,24],"", 24, false);

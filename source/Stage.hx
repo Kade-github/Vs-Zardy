@@ -436,11 +436,9 @@ class Stage
 
 						PlayState.instance.vine.frames = Paths.getSparrowAtlas("five-minute-song/ZardyWeek2_Vines","ChallengeWeek");
 				
-						PlayState.instance.vine.animation.addByPrefix("vine","Vine Whip instance",24,false);
+						PlayState.instance.vine.animation.addByPrefix("vine","Vine Whip instance",Math.floor(24 * PlayState.songMultiplier),false);
 						PlayState.instance.vine.setGraphicSize(Std.int(PlayState.instance.vine.width * 0.85));
 						
-			
-
 						PlayState.instance.vine.alpha = 0;
 				
 						PlayState.instance.add(PlayState.instance.vine);

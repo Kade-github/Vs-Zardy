@@ -468,12 +468,13 @@ class MainMenuState extends MusicBeatState
 				trace("loading " + daChoice);
 				var poop:String = Highscore.formatSong(daChoice, 1);
 
-				PlayState.SONG = Song.loadFromJson(poop, daChoice);
+				PlayState.SONG = Song.conversionChecks(Song.loadFromJson(poop, daChoice));
 				PlayState.isStoryMode = true;
 				PlayState.storyDifficulty = 1;
 
 				PlayState.storyWeek = 0;
 				PlayState.songMultiplier = rate;
+				PlayState.loadRep = false;
 				LoadingState.loadAndSwitchState(new PlayState());
 		}
 	}
@@ -488,19 +489,19 @@ class MainMenuState extends MusicBeatState
 			{
 				curSelected += huh;
 
-				if (curSelected > menuItems.length)
+				if (curSelected > menuItems.length - 1)
 					curSelected = 0;
 				if (curSelected < 0)
-					curSelected = menuItems.length - 2;
+					curSelected = menuItems.length - 1;
 			}
 			else
 			{
 				curSelected += huh;
 
 				if (curSelected > menuItems.length + 1)
-					curSelected = menuItems.length + 1;
-				if (curSelected < menuItems.length)
 					curSelected = menuItems.length;
+				if (curSelected < menuItems.length)
+					curSelected = menuItems.length + 1;
 				trace(curSelected);
 			}
 		}

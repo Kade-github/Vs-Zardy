@@ -11,15 +11,11 @@ function update(elapsed)
 end
 
 function stepHit(step)
-    if step == 2426 then
-        swaying = true
-    end
-
     if step == 2427 then
-        tweenFadeOut('dad',0.8, 0.4)
+        dad:tweenAlpha(0.8,0.4)
     end
 
     if step == 2943 then
-        tweenFadeOut('dad',0,0.4)
+        dad:tweenAlpha(0,0.4)
     end
 end

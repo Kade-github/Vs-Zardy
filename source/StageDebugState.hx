@@ -14,7 +14,7 @@ import openfl.net.FileReference;
 
 using StringTools;
 
-class StageDebugState extends FlxState
+class StagePositioningDebug extends FlxState
 {
 	public var daStage:String;
 	public var daBf:String;
