@@ -360,8 +360,7 @@ class PlayState extends MusicBeatState
 		executeModchart = FileSystem.exists(Paths.lua(songLowercase + "/modchart"));
 		if (isSM)
 			executeModchart = FileSystem.exists(pathToSm + "/modchart.lua");
-		if (executeModchart)
-			PlayStateChangeables.Optimize = false;
+		PlayStateChangeables.Optimize = false;
 		#end
 		#if !cpp
 		executeModchart = false; // FORCE disable for non cpp targets

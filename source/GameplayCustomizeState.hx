@@ -77,7 +77,7 @@ class GameplayCustomizeState extends MusicBeatState
 
 		var camFollow = new FlxObject(0, 0, 1, 1);
 
-		dad = new Character(100, 100, 'dad');
+		dad = new Character(100, 100, 'zardyMyBeloved');
 
         bf = new Boyfriend(770, 450, 'bf');
 
