@@ -55,6 +55,16 @@ class ResultsScreen extends FlxSubState
 
 	override function create()
 	{	
+        if (PlayState.Stage.curStage == "zardyBruh")
+            {
+                PlayState.instance.backgroundVideo("vineShit");
+                PlayState.instance.videoSprite.alpha = 0;
+                PlayState.instance.videoSprite.setGraphicSize(Std.int(PlayState.instance.videoSprite.width * 1.4));
+                PlayState.instance.videoSprite.x = -100;
+                PlayState.instance.videoSprite.y = -100;
+                PlayState.instance.add(PlayState.instance.videoSprite);
+                FlxTween.tween(PlayState.instance.videoSprite,{alpha: 1},3);
+            }
         background = new FlxSprite(0,0).makeGraphic(FlxG.width,FlxG.height,FlxColor.BLACK);
         background.scrollFactor.set();
         add(background);

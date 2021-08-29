@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bushvvhack.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="BushwhackBig0000" x="5" y="5" width="825" height="173" frameX="0" frameY="-1" frameWidth="825" frameHeight="175"/>
+	<SubTexture name="BushwhackBig0001" x="5" y="188" width="825" height="174" frameX="0" frameY="-1" frameWidth="825" frameHeight="175"/>
+	<SubTexture name="BushwhackBig0002" x="5" y="372" width="825" height="175"/>
+	<SubTexture name="BushwhackSmall0000" x="5" y="557" width="608" height="119"/>
+	<SubTexture name="BushwhackSmall0001" x="5" y="557" width="608" height="119"/>
+	<SubTexture name="BushwhackSmall0002" x="5" y="557" width="608" height="119"/>
+	<SubTexture name="BushwhackSmall0003" x="5" y="686" width="608" height="119"/>
+	<SubTexture name="BushwhackSmall0004" x="5" y="686" width="608" height="119"/>
+	<SubTexture name="BushwhackSmall0005" x="5" y="686" width="608" height="119"/>
+	<SubTexture name="BushwhackSmall0006" x="5" y="815" width="608" height="119"/>
+	<SubTexture name="BushwhackSmall0007" x="5" y="815" width="608" height="119"/>
+	<SubTexture name="BushwhackSmall0008" x="5" y="815" width="608" height="119"/>
+</TextureAtlas>

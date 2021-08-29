@@ -398,6 +398,53 @@ class Stage
 							add(waveSpriteFG);
 						 */
 					}
+					case "fuckyouZardyTime":
+					{
+						camZoom = 0.9;
+						curStage = 'zardy';
+						PlayState.ZardyBackground = new FlxSprite(-600, -200);
+						PlayState.ZardyBackground.frames = Paths.getSparrowAtlas('Maze','ChallengeWeek');
+						PlayState.ZardyBackground.animation.addByPrefix('Maze','Stage', 16);
+						PlayState.ZardyBackground.antialiasing = true;
+						PlayState.ZardyBackground.scrollFactor.set(0.9, 0.9);
+						PlayState.ZardyBackground.animation.play('Maze');
+						PlayState.instance.add(PlayState.ZardyBackground);
+					}
+					case "ohshitTheSequal":
+					{
+						camZoom = 0.7;
+						curStage = 'zardyBruh';
+						PlayState.ZardyBackground = new FlxSprite(-600, -200);
+						PlayState.ZardyBackground.frames = Paths.getSparrowAtlas('five-minute-song/Zardy2BG','ChallengeWeek');
+						PlayState.ZardyBackground.animation.addByPrefix('Maze','BG', 24);
+						PlayState.ZardyBackground.antialiasing = true;
+						PlayState.ZardyBackground.animation.play('Maze');
+						PlayState.instance.add(PlayState.ZardyBackground);
+
+						PlayState.instance.vine = new FlxSprite(155,620);
+
+						PlayState.instance.vine.antialiasing = true;
+
+						// load these once so it doesn't lag when we load em
+
+						PlayState.instance.hand = new FlxSprite(0,0).loadGraphic(Paths.image("five-minute-song/Arm0","ChallengeWeek"));
+						PlayState.instance.mic = new FlxSprite(0,0).loadGraphic(Paths.image("five-minute-song/Mic","ChallengeWeek"));
+						PlayState.instance.add(PlayState.instance.hand);
+						PlayState.instance.add(PlayState.instance.mic);
+						PlayState.instance.remove(PlayState.instance.mic);
+						PlayState.instance.remove(PlayState.instance.hand);
+
+						PlayState.instance.vine.frames = Paths.getSparrowAtlas("five-minute-song/ZardyWeek2_Vines","ChallengeWeek");
+				
+						PlayState.instance.vine.animation.addByPrefix("vine","Vine Whip instance",24,false);
+						PlayState.instance.vine.setGraphicSize(Std.int(PlayState.instance.vine.width * 0.85));
+						
+			
+
+						PlayState.instance.vine.alpha = 0;
+				
+						PlayState.instance.add(PlayState.instance.vine);
+					}
 				default:
 					{
 						camZoom = 0.9;

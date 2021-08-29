@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ZardyWeek2_Vines.png">
+	<!-- Created with Adobe Animate version 18.0.0.107 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Vine Whip instance 10000" x="0" y="0" width="118" height="133" frameX="-4" frameY="-213" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10001" x="0" y="0" width="118" height="133" frameX="-4" frameY="-213" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10002" x="118" y="0" width="167" height="214" frameX="-4" frameY="-209" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10003" x="118" y="0" width="167" height="214" frameX="-4" frameY="-209" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10004" x="285" y="0" width="418" height="232" frameX="-1" frameY="-235" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10005" x="703" y="0" width="652" height="230" frameX="0" frameY="-236" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10006" x="1355" y="0" width="645" height="247" frameX="-4" frameY="-213" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10007" x="0" y="247" width="638" height="358" frameX="-6" frameY="-60" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10008" x="0" y="247" width="638" height="358" frameX="-6" frameY="-60" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10009" x="638" y="247" width="630" height="365" frameX="-5" frameY="-39" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10010" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10011" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10012" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10013" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10014" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10015" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10016" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10017" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10018" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10019" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10020" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10021" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10022" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10023" x="1268" y="247" width="624" height="379" frameX="-3" frameY="-25" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10024" x="0" y="626" width="557" height="365" frameX="-6" frameY="-29" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10025" x="557" y="626" width="501" height="398" frameX="-6" frameY="0" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10026" x="1058" y="626" width="484" height="388" frameX="-7" frameY="-11" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10027" x="1058" y="626" width="484" height="388" frameX="-7" frameY="-11" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10028" x="1058" y="626" width="484" height="388" frameX="-7" frameY="-11" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10029" x="1058" y="626" width="484" height="388" frameX="-7" frameY="-11" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10030" x="1058" y="626" width="484" height="388" frameX="-7" frameY="-11" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10031" x="1058" y="626" width="484" height="388" frameX="-7" frameY="-11" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10032" x="1058" y="626" width="484" height="388" frameX="-7" frameY="-11" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10033" x="0" y="1024" width="719" height="232" frameX="-7" frameY="-155" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10034" x="719" y="1024" width="841" height="284" frameX="-9" frameY="-104" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10035" x="0" y="1308" width="881" height="304" frameX="-10" frameY="-85" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10036" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10037" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10038" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10039" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10040" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10041" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10042" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10043" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10044" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10045" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10046" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10047" x="0" y="1612" width="938" height="259" frameX="-9" frameY="-95" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10048" x="938" y="1612" width="929" height="281" frameX="-12" frameY="-77" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10049" x="0" y="1893" width="914" height="301" frameX="-11" frameY="-66" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10050" x="914" y="1893" width="915" height="250" frameX="-16" frameY="-122" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10051" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10052" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10053" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10054" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10055" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10056" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+	<SubTexture name="Vine Whip instance 10057" x="881" y="1308" width="930" height="270" frameX="-8" frameY="-117" frameWidth="947" frameHeight="467"/>
+</TextureAtlas>

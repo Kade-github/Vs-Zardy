@@ -35,12 +35,15 @@ class Main extends Sprite
 
 		// quick checks 
 
+		trace('bruh');
+
 		Lib.current.addChild(new Main());
 	}
 
 	public function new()
 	{
 		super();
+		
 
 		if (stage != null)
 		{

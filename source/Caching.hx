@@ -2,7 +2,7 @@
 package;
 
 import lime.app.Application;
-#if desktop
+#if windows
 import Discord.DiscordClient;
 #end
 import openfl.display.BitmapData;
@@ -62,6 +62,8 @@ class Caching extends MusicBeatState
 
 		bitmapData = new Map<String,FlxGraphic>();
 
+		trace("AHHHHH");
+
 		text = new FlxText(FlxG.width / 2, FlxG.height / 2 + 300,0,"Loading...");
 		text.size = 34;
 		text.alignment = FlxTextAlign.CENTER;
@@ -73,14 +75,9 @@ class Caching extends MusicBeatState
 		text.y -= kadeLogo.height / 2 - 125;
 		text.x -= 170;
 		kadeLogo.setGraphicSize(Std.int(kadeLogo.width * 0.6));
-		if(FlxG.save.data.antialiasing != null)
-			kadeLogo.antialiasing = FlxG.save.data.antialiasing;
-		else
-			kadeLogo.antialiasing = true;
+		kadeLogo.antialiasing = true;
 		
 		kadeLogo.alpha = 0;
-
-		FlxGraphic.defaultPersist = FlxG.save.data.cacheImages;
 
 		#if cpp
 		if (FlxG.save.data.cacheImages)
@@ -91,9 +88,16 @@ class Caching extends MusicBeatState
 			{
 				if (!i.endsWith(".png"))
 					continue;
-				images.push(i);
+				images.push("assets/shared/images/characters" + "/" + i);
 			}
 		}
+
+		for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/ChallengeWeek/images/five-minute-song")))
+			{
+				if (!i.endsWith(".png"))
+					continue;
+				images.push("assets/ChallengeWeek/images/five-minute-song" + "/" + i);
+			}
 
 		trace("caching music...");
 
@@ -101,6 +105,7 @@ class Caching extends MusicBeatState
 		{
 			music.push(i);
 		}
+
 		#end
 
 		toBeDone = Lambda.count(images) + Lambda.count(music);
@@ -152,14 +157,13 @@ class Caching extends MusicBeatState
 
 	function cache()
 	{
-		#if !linux
 		trace("LOADING: " + toBeDone + " OBJECTS.");
 
 		for (i in images)
 		{
 			var replaced = i.replace(".png","");
-			var data:BitmapData = BitmapData.fromFile("assets/shared/images/characters/" + i);
-			trace('id ' + replaced + ' file - assets/shared/images/characters/' + i + ' ${data.width}');
+			var data:BitmapData = BitmapData.fromFile(i);
+			trace('id ' + replaced + ' file - ' + i + ' ${data.width}');
 			var graph = FlxGraphic.fromBitmapData(data);
 			graph.persist = true;
 			graph.destroyOnNoUse = false;
@@ -182,7 +186,6 @@ class Caching extends MusicBeatState
 
 		trace(Assets.cache.hasBitmapData('GF_assets'));
 
-		#end
 		FlxG.switchState(new TitleState());
 	}
 
