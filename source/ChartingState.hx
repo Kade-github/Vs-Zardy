@@ -461,6 +461,10 @@ class ChartingState extends MusicBeatState
 
 		trace("create");
 
+		#if android
+		addVirtualPad(LEFT_FULL, A_B);
+		#end
+
 		super.create();
 	}
 

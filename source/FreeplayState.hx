@@ -275,7 +275,11 @@ class FreeplayState extends MusicBeatState
 			// scoreText.textField.htmlText = md;
 
 			trace(md);
-		 */
+		*/
+
+		#if android
+		addVirtualPad(LEFT_FULL, A_B);
+		#end
 
 		super.create();
 	}
