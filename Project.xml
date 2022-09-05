@@ -29,7 +29,7 @@
 	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" vsync="false"/>
 
 	<!--Mobile-specific-->
-	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" resizable="false"/>
+	<window if="mobile" orientation="landscape" fullscreen="true" width="1280" height="720" resizable="false"/>
 
 	<!--Switch-specific-->
 	<window if="switch" orientation="landscape" fullscreen="true" width="0" height="0" resizable="true" />
@@ -85,6 +85,7 @@
 		NOT USING A DIRECT THING TO THE ASSET!!!
 	-->
 	<assets path="assets/fonts" embed='true'/>
+	<assets path="assets/android" if="android" />
 
 	<assets path="assets/videos" exclude="*.mp3" if="web"/>
 	<assets path="assets/videos" exclude="*.ogg" unless="web"/>
@@ -111,7 +112,8 @@
 	<haxelib name="polymod"/>
 	<haxelib name="discord_rpc" if="desktop"/>
 	<haxelib name="linc_luajit"/>
-	<haxelib name="hxvm-luajit" if="desktop"/>
+	<haxelib name="hxvm-luajit"/>
+	<haxelib name="extension-androidtools" if="android" />
 	<!-- <haxelib name="hxcpp-debug-server" if="desktop"/> -->
 
 	<!-- <haxelib name="markdown" /> -->
@@ -153,6 +155,21 @@
 
 	<!--Enable this for Nape release builds for a serious peformance improvement-->
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
+
+	<!--Make's-the-Game-use-less-ram-->
+	<haxedef name="HXCPP_GC_BIG_BLOCKS" />
+
+	<!--Always-enable-Null-Object-Reference-check-->
+	<haxedef name="HXCPP_CHECK_POINTER" if="release" />
+	<haxedef name="HXCPP_STACK_LINE" if="release" />
+
+	<!--Android-Things-->
+	<android permission="android.permission.ACCESS_NETWORK_STATE" />
+	<android permission="android.permission.ACCESS_WIFI_STATE" />
+	<android permission="android.permission.INTERNET" />
+	<android target-sdk-version="29" />
+	<android gradle-version="5.4.1" />
+	<android gradle-plugin="3.5.0" />
 
 	<!-- _________________________________ Custom _______________________________ -->
 
