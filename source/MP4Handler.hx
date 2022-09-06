@@ -6,7 +6,7 @@ import openfl.events.Event;
 import openfl.media.Video;
 import openfl.net.NetConnection;
 import openfl.net.NetStream;
-import vlc.vlcBitmap;
+import vlc.VlcBitmap;
 import flixel.FlxSprite;
 
 // THIS IS FOR TESTING
