@@ -11,7 +11,6 @@ import flixel.FlxG;
 import haxe.CallStack.StackItem;
 import haxe.CallStack;
 import haxe.io.Path;
-import lime.app.Application;
 import openfl.Lib;
 import openfl.events.UncaughtErrorEvent;
 import openfl.utils.Assets;
@@ -42,7 +41,7 @@ class SUtil
 				/**
 				 * Basically for now i can't force the app to stop while its requesting a android permission, so this makes the app to stop while its requesting the specific permission
 				 */
-				Application.current.window.alert('If you accepted the permissions you are all good!' + "\nIf you didn't then expect a crash"
+				Lib.application.window.alert('If you accepted the permissions you are all good!' + "\nIf you didn't then expect a crash"
 					+ 'Press Ok to see what happens',
 					'Permissions?');
 			}
@@ -111,7 +110,7 @@ class SUtil
 	 * This returns the external storage path that the game will use
 	 */
 	public static function getPath():String
-		#if android return Environment.getExternalStorageDirectory() + '/' + '.' + Application.current.meta.get('file') + '/'; #else return ''; #end
+		#if android return Environment.getExternalStorageDirectory() + '/' + '.' + Lib.application.meta.get('file') + '/'; #else return ''; #end
 
 	/**
 	 * Uncaught error handler, original made by: sqirra-rng
@@ -149,7 +148,7 @@ class SUtil
 
 				File.saveContent(SUtil.getPath()
 					+ 'logs/'
-					+ Application.current.meta.get('file')
+					+ Lib.application.meta.get('file')
 					+ '-'
 					+ Date.now().toString().replace(' ', '-').replace(':', "'")
 					+ '.log',
