@@ -67,27 +67,27 @@ class MP4Handler
 		trace("Setting width to " + FlxG.stage.stageHeight * (16 / 9));
 		trace("Setting height to " + FlxG.stage.stageHeight);
 
-		vlcBitmap.onVideoReady = onVLCVideoReady;
-		vlcBitmap.onComplete = onVLCComplete;
-		vlcBitmap.onError = onVLCError;
+		VlcBitmap.onVideoReady = onVLCVideoReady;
+		VlcBitmap.onComplete = onVLCComplete;
+		VlcBitmap.onError = onVLCError;
 
 		FlxG.stage.addEventListener(Event.ENTER_FRAME, update);
 
 		if (repeat)
-			vlcBitmap.repeat = -1;
+			VlcBitmap.repeat = -1;
 		else
-			vlcBitmap.repeat = 0;
+			VlcBitmap.repeat = 0;
 
-		vlcBitmap.inWindow = isWindow;
-		vlcBitmap.fullscreen = isFullscreen;
+		VlcBitmap.inWindow = isWindow;
+		VlcBitmap.fullscreen = isFullscreen;
 
-		FlxG.addChildBelowMouse(vlcBitmap);
-		vlcBitmap.play(checkFile(path));
+		FlxG.addChildBelowMouse(VlcBitmap);
+		VlcBitmap.play(checkFile(path));
 		if (outputTo != null)
 		{
 			// lol this is bad kek
 			
-			vlcBitmap.x = -20000; // defn off screen
+			VlcBitmap.x = -20000; // defn off screen
 
 			sprite = outputTo;
 			trace("gosh darn rabitygs");
@@ -95,7 +95,6 @@ class MP4Handler
 		#end
 	}
 
-	#if desktop
 	function checkFile(fileName:String):String
 	{
 		var pDir = "";
@@ -116,8 +115,8 @@ class MP4Handler
 		trace("video loaded!");
 		if (sprite != null)
 		{
-			sprite.loadGraphic(vlcBitmap.bitmapData);	
-			trace("loaded da graphics " + vlcBitmap.bitmapData);
+			sprite.loadGraphic(VlcBitmap.bitmapData);	
+			trace("loaded da graphics " + VlcBitmap.bitmapData);
 		}
 	}
 
@@ -125,17 +124,17 @@ class MP4Handler
 	{
 		if (sprite != null)
 		{
-			vlcBitmap.pause();
+			VlcBitmap.pause();
 			return;
 		}
-		vlcBitmap.stop();
+		VlcBitmap.stop();
 
 		// Clean player, just in case!
-		vlcBitmap.dispose();
+		VlcBitmap.dispose();
 
-		if (FlxG.game.contains(vlcBitmap))
+		if (FlxG.game.contains(VlcBitmap))
 		{
-			FlxG.game.removeChild(vlcBitmap);
+			FlxG.game.removeChild(VlcBitmap);
 		}
 
 		trace("Big, Big Chungus, Big Chungus!");
@@ -156,9 +155,8 @@ class MP4Handler
 
 	function update(e:Event)
 	{
-		vlcBitmap.volume = FlxG.sound.volume; // shitty volume fix
+		VlcBitmap.volume = FlxG.sound.volume; // shitty volume fix
 	}
-	#end
 
 	/////////////////////////////////////////////////////////////////////////////////////
 
