@@ -3,6 +3,7 @@ package;
 #if android
 import android.Hardware;
 import android.Permissions;
+import android.Application;
 import android.os.Build;
 import android.os.Environment;
 #end
