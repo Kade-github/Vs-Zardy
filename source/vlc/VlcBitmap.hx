@@ -24,7 +24,7 @@ import vlc.LibVLC;
 #if cpp
 @:cppFileCode('#include "LibVLC.cpp"')
 #end
-class vlcBitmap extends Bitmap
+class VlcBitmap extends Bitmap
 {
 	/////////////////////////////////////////////////////////////////////////////////////
 	// ===================================================================================
