@@ -61,10 +61,10 @@ class MP4Handler
 		#else
 		finishCallback = callback;
 
-		vlcBitmap = new VlcBitmap();
+		VlcBitmap = new VlcBitmap();
 
-		vlcBitmap.set_height(FlxG.stage.stageHeight);
-		vlcBitmap.set_width(FlxG.stage.stageHeight * (16 / 9));
+		VlcBitmap.set_height(FlxG.stage.stageHeight);
+		VlcBitmap.set_width(FlxG.stage.stageHeight * (16 / 9));
 
 		trace("Setting width to " + FlxG.stage.stageHeight * (16 / 9));
 		trace("Setting height to " + FlxG.stage.stageHeight);
