@@ -47,17 +47,17 @@ jobs:
           haxelib install hxcpp > /dev/null
           haxelib install lime 7.9.0 
           haxelib install openfl 9.1.0 
-          haxelib git flixel https://github.com/HaxeFlixel/Flixel 
+          haxelib --never install flixel
           haxelib run lime setup flixel
           haxelib install flixel-ui
           haxelib install flixel-addons
-          haxelib git linc_luajit https://github.com/MAJigsaw77/linc_luajit.git
+          haxelib git linc_luajit https://github.com/MAJigsaw77/linc_luajit
           haxelib git hxvm-luajit https://github.com/nebulazorua/hxvm-luajit
-          haxelib git hxCodec https://github.com/polybiusproxy/hxCodec.git
+          haxelib git hxCodec https://github.com/polybiusproxy/hxCodec
           haxelib git extension-webm https://github.com/Sirox228/extension-webm
           haxelib git polymod https://github.com/MasterEric/polymod
-          haxelib git newgrounds https://github.com/Geokureli/Newgrounds.git
-          haxelib git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools.git
+          haxelib git newgrounds https://github.com/Geokureli/Newgrounds
+          haxelib git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools
           haxelib list
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
