@@ -3695,7 +3695,7 @@ class PlayState extends MusicBeatState
 					}
 					#end
 
-					if (SONG.validScore
+					if (SONG.validScore) 
                                         {
 						Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
 					}
